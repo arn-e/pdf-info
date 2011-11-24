@@ -1,0 +1,6 @@
+Quick and dirty python script to read properties of PDF files across a file system.
+Accesses a SQL database via ODBC to retrieve file locations.
+It will not run as-is, obviously, since it depends on a specific database schema.
+
+The PyPDF library is used, as well as a more 'manual' approach - reading page markers from the plain text of a PDF file.
+This proved to be necessary since the PyPDF module has trouble with certain PDF versions.
