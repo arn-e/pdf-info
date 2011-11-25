@@ -56,13 +56,13 @@ def sql_execute (list_of_tables, number_of_tables) :
                 " where #CRITERIA#"
             )
         for row in cursor :
-            batch_list.append(str(row.BATCH))
-            docno_list.append(str(row.DOCNO))
-            fext_list.append(str(row.FEXT))
-            uuid_list.append(str(row.UUID))
-            relpath_list.append(str(row.RELPATH))
-            revstatus_list.append(str(row.REVREVIEWSTATUS))
-            pgcount_list.append(str(row.PGCOUNT))
+            batch_list.append(str(row.FIELD1))
+            docno_list.append(str(row.FIELD2))
+            fext_list.append(str(row.FIELD3))
+            uuid_list.append(str(row.FIELD4))
+            relpath_list.append(str(row.FIELD5))
+            revstatus_list.append(str(row.FIELD6))
+            pgcount_list.append(str(row.FIELD7))
         i_tbl = i_tbl + 1
     full_list = [FIELD1, FIELD2, FIELD3, FIELD4, FIELD5, FIELD6, FIELD7]
     return full_list
