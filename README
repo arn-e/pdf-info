@@ -1,12 +1,17 @@
-Quick and dirty python script to read properties of PDF files across a file system.  
-Accesses a SQL database via ODBC to retrieve file locations.  
-It will not run as-is, obviously, since it depends on a specific database schema.
+Quick and dirty python script to read properties of PDF files  
+across a file system.  It accesses a SQL database via ODBC to  
+retrieve file locations.  
 
-The PyPDF library is used, as well as a more 'manual' approach - reading page markers  
-from the plain text of a PDF file.  This proved to be necessary since the PyPDF module  
-has trouble with certain PDF versions.
+It will not run as-is, obviously, since it depends on a specific  
+database schema.
 
-Although this is by now old code (almost 2 years), I am quite proud of this little script.  
-It was my second fully functional script, and my first non-trivial piece of code.  
-In particular, I had a lot of fun learning to retrieve data from a SQL database as well  
-as having to work around the version limitations of PyPDF.
+The PyPDF library is used, as well as a more 'manual' approach :  
+reading page markersfrom the plain text of a PDF file.  This proved  
+to be necessary since the PyPDF modulehas trouble with certain PDF  
+versions.
+
+Although this is by now old code (almost 2 years), I am quite proud  
+of this little script.  It was my second fully functional script, and  
+my first non-trivial piece of code.  In particular, I had a lot of fun  
+learning to retrieve data from a SQL database as well as having to work  
+around the version limitations of PyPDF.
