@@ -1,16 +1,20 @@
-Quick and dirty python script to read properties of PDF files  
-across a file system.  It accesses a SQL database via ODBC to  
-retrieve file locations.  
+Quick and dirty python script to determine of PDF files across 
+a file system.  It takes a delimited list of filenames as input  
+and accesses a SQL database via ODBC to retrieve the location of  
+the files to be scanned.  It could just as easily have been built  
+to use an input list of full relative paths, however this information  
+was already stored in a database.
 
 It will not run as-is, obviously, since it depends on a specific  
-database schema.
+database schema.  The field names have been replaced with generic  
+placeholders.
 
 The PyPDF library is used, as well as a more 'manual' approach :  
-reading page markersfrom the plain text of a PDF file.  This proved  
+reading page markers from the plain text of a PDF file.  This proved  
 to be necessary since the PyPDF module has trouble with certain PDF  
 versions, such as 1.3 and 1.6.
 
-Although this is by now old code (almost 2 years), I am quite proud  
+Although this is by now old code (almost 2 years), I am quite proud    
 of this little script.  It was my second fully functional script,  
 and my first non-trivial piece of code.  In particular, I had a lot  
 offun learning to retrieve data from a SQL database as well as having  
