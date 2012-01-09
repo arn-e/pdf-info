@@ -1,5 +1,5 @@
-Quick and dirty python script to determine of PDF files across 
-a file system.  It takes a delimited list of filenames as input  
+Quick and fun python script to determine of PDF files across a  
+file system.  It takes a delimited list of filenames as input  
 and accesses a SQL database via ODBC to retrieve the location of  
 the files to be scanned.  It could just as easily have been built  
 to use an input list of full relative paths, however this information  
